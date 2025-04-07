@@ -1,0 +1,397 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+/* Page Container */
+.container {
+    max-width: 1200px; /* Limits the width */
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center; /* Centers the nav links */
+    align-items: center;
+    background: rgba(1, 55, 14, 0.7); /* Green with transparency */
+    padding: 15px 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+nav .logo {
+    position: absolute;
+    left: 20px; /* Keeps the logo on the left */
+}
+
+nav .logo img {
+    max-width: 80px;  /* Reduced the size of the logo */
+    height: 80px; /* Make sure the height is equal to the width */
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover; /* Ensures the image fits properly */
+}
+
+nav .nav-links h1 {
+    color: #ffffff; /* White color for the title */
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem; /* Adjust font size */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #043310;
+}
+
+/* Slideshow Section */
+.slideshow {
+    max-width: 1000px; /* Adjusted width */
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Vision Section */
+.vision {
+    position: relative;
+    background: url('https://ngcgreen.co.tt/wp-content/uploads/2024/02/ngc-green-hero-bg.jpg') no-repeat center center; /* Add a background image */
+    background-size: cover; /* Make sure the background covers the section */
+    background-position: left;
+    padding: 60px 20px; /* More padding for a spacious look */
+    color: white; /* Make text white for better contrast */
+    text-align: center;
+    max-width: 1200px; /* Limit the width */
+    margin: 40px auto; /* Center-align the section */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    opacity: 0.8;
+  }
+  
+
+  .vision h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    font-weight: bold;
+    padding: 40px 20px;
+  margin-top: -30px; /* Adjust this value to move the section upwards */
+    text-align: left;
+    margin-bottom: 20px;
+    color: #093f1b; /* Green color for the heading to match the eco theme */
+  }
+
+  .vision p {
+    font-size: 1.2rem;
+    color: #093f1b; /* Green color for the heading to match the eco theme */
+    max-width: 800px;
+    padding: 40px 20px;
+  margin-top: -80px; /* Adjust this value to move the section upwards */
+    text-align:left;
+    line-height: 1.6; /* Increased line height for readability */
+  }
+  
+  
+
+/* Featured Products Section */
+.featured-products {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the section */
+    text-align: center;
+  }
+  
+  .featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #093f1b; /* Eco green color */
+  }
+  
+  /* Centering the grid and ensuring the cards are aligned */
+  .product-grid {
+    display: flex;
+    justify-content: center; /* Centers the grid horizontally */
+    gap: 30px;
+    flex-wrap: wrap; /* Allows wrapping of products */
+    margin-top: 30px;
+  }
+  
+  .product-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    width: 300px; /* Adjust product card width */
+    margin-bottom: 20px;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-info {
+    padding: 15px;
+  }
+  
+  .product-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-size: 1.2rem;
+    color: #093f1b;
+    margin: 10px 0;
+  }
+  
+  .view-details {
+    background: #055016;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .view-details:hover {
+    background: #218838;
+  }
+  
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap; /* To make sure it behaves better on small screens */
+  }
+  
+  .product-details .image-container {
+    width: 40%; /* Image section takes 40% of the width */
+    padding-right: 20px; /* Add some space between image and text */
+  }
+  
+  .product-details img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-details .details {
+    width: 55%; /* Text section takes 55% of the width */
+    text-align: left;
+    margin-left: 16px;
+  }
+  
+  .product-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #093f1b;
+  }
+  
+  .product-details .price {
+    font-size: 1.2rem;
+    color: #000903;
+    margin-left: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  .product-details p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .product-info {
+    margin-top: -30px;
+    text-align: left;
+    margin-bottom: -30px;
+  }
+  
+  .product-info h1 {
+    font-size: 1.4rem;
+    color: #093f1b;
+   text-align: left;
+   margin-bottom: -40px;
+  }
+  
+  .product-info p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: left;
+  }
+  
+  .quantity-selector {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-selector label {
+    margin-right: 10px;
+    margin-left: 16px;
+  }
+  
+  .quantity-selector input {
+    width: 60px;
+    height: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+
+  }
+  
+  .add-to-cart {
+    background-color: #28a745;
+    width: 100px;
+    color: white;
+    padding: 5px;
+    font-size: 1.0rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .product-details {
+      flex-direction: column;
+      align-items: left;
+    }
+  
+    .product-details .image-container {
+      width: 80%; /* Image takes up more space on smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .product-details .details {
+      width: 90%; /* Text section takes most of the space on smaller screens */
+      
+    }
+  }
+  
+  /* Add this to your App.css or specific About Us page CSS file */
+
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    line-height: 1.6;
+    position: relative;
+    background-color: #e4f2e4; /* Optional: you can change this to any color */
+    opacity: 0.8;
+  }
+  
+
+
+  
+  /* Optional: Adjust text content to look better with the background images */
+  .about-us h1 {
+    font-size: 2.5rem;
+    color: #093f1b;
+    margin-bottom: 20px;
+  }
+  
+  .about-us h2 {
+    font-size: 2rem;
+    color: #093f1b;
+    margin-top: 20px;
+  }
+  
+  .about-us ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-us ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .our-team .team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info ul {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  
+
+/* Footer */
+.footer {
+    background: rgba(1, 55, 14, 0.7); /* Green with transparency */
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}
